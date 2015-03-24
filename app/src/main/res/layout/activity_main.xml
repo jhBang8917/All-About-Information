@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:background="@drawable/main_bg"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent" android:gravity="bottom" android:paddingBottom="30dp">
+
+    <Button
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:background="@drawable/main_button_brand"
+            android:id="@+id/button_certification" android:layout_marginLeft="20dp" android:layout_marginRight="20dp"
+            android:layout_marginTop="15dp" />
+    <Button android:layout_width="match_parent"
+            android:background="@drawable/main_button_new"
+            android:layout_height="70dp"
+            android:id="@+id/button_harmUpdate" android:layout_marginLeft="20dp" android:layout_marginRight="20dp"
+            android:layout_marginTop="15dp" />
+    <Button
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:background="@drawable/main_button_agency"
+            android:id="@+id/button_agency" android:layout_marginLeft="20dp" android:layout_marginRight="20dp"
+            android:layout_marginTop="15dp" />
+</LinearLayout>

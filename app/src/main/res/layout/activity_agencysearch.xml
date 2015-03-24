@@ -1,0 +1,66 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingTop="8dp"
+                tools:context=".MainActivity$PlaceholderFragment" android:id="@+id/mainview"
+                android:background="@drawable/brandsearch_main_bg">
+    <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/common_detail_button_up"
+            android:id="@+id/backButton" android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10dp"/>
+
+    <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/imageView"
+            android:src="@drawable/agencysearch_title"
+            android:layout_alignParentTop="true" android:layout_centerHorizontal="true"
+            android:layout_marginTop="101dp"/>
+    <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/linearLayout" android:layout_centerVertical="true" android:layout_centerHorizontal="true"
+            android:layout_marginLeft="16dp" android:layout_marginRight="16dp">
+
+        <EditText
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:id="@+id/agencysearch_edittext"
+                android:background="@drawable/brandsearch_searching_bar"
+                android:autoText="false" android:hint="기관 이름을 입력해주세요"
+                android:layout_centerVertical="true" android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" android:layout_marginRight="20dp" android:paddingLeft="10dp"
+                android:layout_weight="5" android:textColor="@android:color/white" android:textColorHint="#80ffffff"
+                android:singleLine="true"/>
+        <ImageButton
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:background="@drawable/brandsearch_button"
+                android:id="@+id/agencysearch_button"
+                android:layout_centerVertical="true" android:layout_toRightOf="@+id/searchText"
+                android:layout_toEndOf="@+id/searchText" android:layout_weight="1"/>
+    </LinearLayout>
+
+    <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="70dp" android:background="#ff468CCB" android:layout_alignParentBottom="true">
+
+        <ImageButton
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/common_button_menu_new"
+                android:id="@+id/bottomButton1" android:layout_weight="1" />
+        <ImageButton
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/common_button_menu_brand"
+                android:id="@+id/bottomButton2" android:layout_weight="1" />
+    </LinearLayout>
+
+
+</RelativeLayout>

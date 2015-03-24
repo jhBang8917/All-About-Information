@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent" android:gravity="center_vertical|center_horizontal"
+             android:focusable="false" android:focusableInTouchMode="false">
+
+    <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/item_listview" android:textSize="18dp"
+            android:textColor="@android:color/holo_blue_dark" android:text="test" android:singleLine="true"
+            android:ellipsize="marquee" android:focusable="false" android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp" android:gravity="center_vertical|center_horizontal"
+            android:textIsSelectable="false" android:focusableInTouchMode="false"/>
+</LinearLayout>

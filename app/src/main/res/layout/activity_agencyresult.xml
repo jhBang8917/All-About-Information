@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+    <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="0dp" android:layout_weight="2.5"
+            android:layout_marginLeft="20dp" android:layout_marginTop="10dp" android:layout_marginRight="20dp"
+            android:layout_marginBottom="10dp">
+        <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:text="기관 이름"
+                android:id="@+id/agencyname_textview" android:layout_weight="3"
+                android:textSize="15dp" android:gravity="center_vertical|center_horizontal" android:singleLine="true"
+                android:ellipsize="marquee"
+                android:marqueeRepeatLimit="marquee_forever" android:textColor="#ff468CCB" android:textStyle="bold"/>
+        <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent" android:layout_weight="6" android:paddingLeft="20dp"
+                android:paddingTop="10dp" android:paddingBottom="10dp">
+            <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="fill_parent"
+                    android:layout_height="0dp" android:layout_weight="1" android:gravity="center_vertical">
+                <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="항목"
+                        android:id="@+id/agencytitle1_textview" android:layout_weight="2" android:textSize="11dp"
+                        android:textColor="#70000000" android:gravity="center_vertical|center_horizontal"/>
+                <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="내용"
+                        android:id="@+id/agencycontent1_textview" android:layout_weight="7"
+                        android:marqueeRepeatLimit="marquee_forever" android:singleLine="true"
+                        android:textColor="#ff000000" android:textSize="14dp" android:gravity="center_vertical"
+                        android:paddingLeft="10dp"
+                        android:ellipsize="marquee"/>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent"
+                          android:layout_height="0dp" android:layout_weight="1" android:gravity="center_vertical">
+                <TextView android:layout_width="0dp" android:layout_height="wrap_content"
+                          android:text="항목"
+                          android:id="@+id/agencytitle2_textview" android:layout_weight="2" android:textSize="11dp"
+                          android:textColor="#70000000" android:gravity="center_vertical|center_horizontal"/>
+                <TextView android:layout_width="0dp" android:layout_height="wrap_content"
+                          android:text="내용"
+                          android:id="@+id/agencycontent2_textview" android:layout_weight="7"
+                          android:marqueeRepeatLimit="marquee_forever" android:singleLine="true"
+                          android:textColor="#ff000000" android:textSize="14dp" android:gravity="center_vertical"
+                          android:focusableInTouchMode="false" android:focusable="false" android:paddingLeft="10dp"
+                          android:textIsSelectable="true"/>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent"
+                          android:layout_height="0dp" android:layout_weight="1" android:gravity="center_vertical">
+                <TextView android:layout_width="0dp" android:layout_height="wrap_content"
+                          android:text="항목"
+                          android:id="@+id/agencytitle3_textview" android:layout_weight="2" android:textSize="11dp"
+                          android:textColor="#70000000" android:gravity="center_vertical|center_horizontal"/>
+                <TextView android:layout_width="0dp" android:layout_height="wrap_content"
+                          android:text="내용"
+                          android:id="@+id/agencycontent3_textview" android:layout_weight="7"
+                          android:marqueeRepeatLimit="marquee_forever" android:singleLine="true"
+                          android:textColor="#ff000000" android:textSize="14dp" android:gravity="center_vertical"
+                          android:paddingLeft="10dp"
+                          android:ellipsize="marquee"/>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="0dp" android:layout_weight="7">
+        <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" android:layout_weight="7" android:paddingLeft="10dp"
+                android:paddingRight="10dp">
+            <com.nhn.android.maps.NMapView android:layout_width="match_parent"
+                                           android:layout_height="match_parent"
+                                           android:id="@+id/naver_mapView"/>
+
+            <Button
+                    android:layout_width="80dp"
+                    android:layout_height="30dp"
+                    android:background="@drawable/agency_agency_button_gotomap"
+                    android:id="@+id/nmapmove_button" android:layout_gravity="right|bottom"
+                    android:layout_marginRight="7dp" android:layout_marginBottom="7dp"/>
+        </FrameLayout>
+    </RelativeLayout>
+    <Button
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:id="@+id/agencycall_button" android:layout_gravity="center" android:layout_marginBottom="15dp"
+            android:background="@drawable/agency_agency_button_call"
+            android:layout_weight="1" android:layout_marginTop="15dp" android:layout_marginLeft="50dp"
+            android:layout_marginRight="50dp"/>
+
+</LinearLayout>
